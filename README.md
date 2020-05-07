@@ -32,5 +32,26 @@ git clone https://github.com/rpl-as-ucl/summit_xl_common.git
 git clone https://github.com/rpl-as-ucl/summit_xl_sim.git
 git clone https://github.com/rpl-as-ucl/summit_xls_ur5_common.git
 git clone https://github.com/ros-industrial/universal_robot.git
+cd ..
 rosdep install --from-paths src --ignore-src -r -y
+catkin build -j 1
+```
+
+## Step 3-1: run the rbkairos with moveit
+Terminal 1:
+```bash
+source devel/setup.bash
+roslaunch rbkairos_sim_bringup rbkairos_complete.launch
+```
+Terminal 2:
+```bash
+source devel/setup.bash
+roslaunch rbkairos_moveit_config rbkairos_planning_execution.launch
+```
+
+## Step 3-2: run the franka with moveit
+Terminal 1:
+```bash
+source devel/setup.bash
+roslaunch panda_simulator simulation.launch
 ```
