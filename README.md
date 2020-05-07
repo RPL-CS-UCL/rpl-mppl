@@ -12,4 +12,25 @@ The code has been tested in ROS Kinetic
 ```bash
 mkdir -p rpl-mppl/src
 cd rpl-mppl/src
+git clone https://github.com/rpl-as-ucl/egh_gripper_common.git
+git clone https://github.com/rpl-as-ucl/egh_gripper_controller.git
+git clone https://github.com/rpl-as-ucl/franka_ros.git
+git clone https://github.com/rpl-as-ucl/gazebo_ros_pkgs.git
+git clone https://github.com/rpl-as-ucl/mppl_common.git
+git clone https://github.com/rpl-as-ucl/mppl_sim.git
+git clone https://github.com/rpl-as-ucl/panda_moveit_config.git
+git clone https://github.com/rpl-as-ucl/panda_simulator.git
+git clone https://github.com/rpl-as-ucl/rbkairos_common.git
+git clone https://github.com/rpl-as-ucl/rbkairos_sim.git
+git clone https://github.com/rpl-as-ucl/rcomponent.git
+git clone https://github.com/rpl-as-ucl/robotnik_elevator_interface.git
+git clone https://github.com/rpl-as-ucl/robotnik_gazebo_models.git
+git clone https://github.com/rpl-as-ucl/robotnik_gazebo_plugins.git
+git clone https://github.com/rpl-as-ucl/robotnik_sensors.git
+git clone https://github.com/rpl-as-ucl/robotnik_sensors.git
+git clone https://github.com/rpl-as-ucl/summit_xl_common.git
+git clone https://github.com/rpl-as-ucl/summit_xl_sim.git
+git clone https://github.com/rpl-as-ucl/summit_xls_ur5_common.git
+git clone https://github.com/ros-industrial/universal_robot.git
+rosdep install --from-paths src --ignore-src -r -y
 ```
