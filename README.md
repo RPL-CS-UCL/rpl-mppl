@@ -26,8 +26,9 @@ git clone https://github.com/rpl-as-ucl/rcomponent.git
 git clone https://github.com/rpl-as-ucl/robotnik_elevator_interface.git
 git clone https://github.com/rpl-as-ucl/robotnik_gazebo_models.git
 git clone https://github.com/rpl-as-ucl/robotnik_gazebo_plugins.git
-git clone https://github.com/rpl-as-ucl/robotnik_sensors.git
+git clone https://github.com/rpl-as-ucl/ros_astra_camera.git
 git clone https://github.com/rpl-as-ucl/robotnik_msgs.git
+git clone https://github.com/rpl-as-ucl/robotnik_sensors.git
 git clone https://github.com/rpl-as-ucl/summit_xl_common.git
 git clone https://github.com/rpl-as-ucl/summit_xl_sim.git
 git clone https://github.com/rpl-as-ucl/summit_xls_ur5_common.git
