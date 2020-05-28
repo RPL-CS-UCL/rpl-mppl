@@ -62,5 +62,6 @@ roslaunch panda_simulator simulation.launch
 sudo apt-get install python-empy
 sudo apt-get install libuvc-dev 
 sudo apt-get install ros-kinetic-hector-nav-msgs
+sudo apt-get install ros-kinetic-hector-trajectory-server
 sudo apt-get install ros-kinetic-navigation
 ```
