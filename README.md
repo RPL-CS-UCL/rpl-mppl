@@ -55,3 +55,8 @@ Terminal 1:
 source devel/setup.bash
 roslaunch panda_simulator simulation.launch
 ```
+
+## Bugs:
+```bash
+sudo apt-get install python-empy
+```
