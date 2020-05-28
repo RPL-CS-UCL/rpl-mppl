@@ -60,4 +60,5 @@ roslaunch panda_simulator simulation.launch
 ## Bugs:
 ```bash
 sudo apt-get install python-empy
+sudo apt-get install libuvc-dev 
 ```
