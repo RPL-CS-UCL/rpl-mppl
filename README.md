@@ -64,4 +64,5 @@ sudo apt-get install libuvc-dev
 sudo apt-get install ros-kinetic-hector-nav-msgs
 sudo apt-get install ros-kinetic-hector-trajectory-server
 sudo apt-get install ros-kinetic-navigation
+sudo apt-get install ros-kinetic-cob-navigation-config
 ```
