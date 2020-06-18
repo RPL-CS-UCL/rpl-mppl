@@ -17,6 +17,7 @@ git clone https://github.com/rpl-as-ucl/egh_gripper_controller.git
 git clone https://github.com/rpl-as-ucl/franka_ros.git
 git clone https://github.com/rpl-as-ucl/gazebo_ros_pkgs.git
 git clone https://github.com/rpl-as-ucl/mppl_common.git
+git clone https://github.com/rpl-as-ucl/mppl_odom_broadcaster.git
 git clone https://github.com/rpl-as-ucl/mppl_sim.git
 git clone https://github.com/rpl-as-ucl/panda_moveit_config.git
 git clone https://github.com/rpl-as-ucl/panda_simulator.git
