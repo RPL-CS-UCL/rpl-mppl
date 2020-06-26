@@ -38,6 +38,7 @@ git clone https://github.com/rpl-as-ucl/ros_astra_camera.git
 git clone https://github.com/rpl-as-ucl/robotnik_msgs.git
 git clone https://github.com/rpl-as-ucl/robotnik_sensors.git
 git clone https://github.com/rpl-as-ucl/rpl_panda_with_rs.git
+git clone https://github.com/rpl-as-ucl/scripts.git
 git clone https://github.com/rpl-as-ucl/summit_xl_common.git
 git clone https://github.com/rpl-as-ucl/summit_xl_sim.git
 git clone https://github.com/rpl-as-ucl/summit_xls_ur5_common.git
