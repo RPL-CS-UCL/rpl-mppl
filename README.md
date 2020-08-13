@@ -7,8 +7,6 @@ The code has been tested in ROS Kinetic
 ```bash
 sudo apt-get install ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface ros-kinetic-combined-robot-hw ros-kinetic-joint-state-controller ros-kinetic-velocity-controllers ros-kinetic-twist-mux ros-kinetic-diff-drive-controller ros-kinetic-costmap-prohibition-layer ros-kinetic-moveit ros-kinetic-moveit-core ros-kinetic-teb-local-planner ros-kinetic-move-base ros-kinetic-moveit-kinematics ros-kinetic-robot-localization ros-kinetic-combined-robot-hw ros-kinetic-joint-limits-interface ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-position-controllers ros-kinetic-joint-trajectory-controller ros-kinetic-moveit-visual-tools ros-kinetic-moveit-ros-planning-interface ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-global-planner ros-kinetic-joint-state-publisher-gui
 
-sudo apt-get install gazebo7* libgazebo7* ros-kinetic-gazebo7-*
-
 sudo apt-get install -y rosbash
 ```
 Note that in melodic this package is also needed: ros-kinetic-moveit-ros-occupancy-map-monitor
@@ -21,7 +19,6 @@ cd rpl-mppl/src
 git clone https://github.com/rpl-as-ucl/egh_gripper_common.git
 git clone https://github.com/rpl-as-ucl/egh_gripper_controller.git
 git clone https://github.com/rpl-as-ucl/franka_ros.git
-git clone https://github.com/rpl-as-ucl/gazebo_ros_pkgs.git
 git clone https://github.com/rpl-as-ucl/hector_gazebo.git
 git clone https://github.com/rpl-as-ucl/mppl_common.git
 git clone https://github.com/rpl-as-ucl/mppl_odom_broadcaster.git
@@ -48,6 +45,7 @@ cd ..
 rosdep install --from-paths src --ignore-src -r -y
 catkin build -j 1
 ```
+It may also need: git clone https://github.com/rpl-as-ucl/gazebo_ros_pkgs.git
 
 ## Step 3-1: run the rbkairos with moveit
 Terminal 1:
