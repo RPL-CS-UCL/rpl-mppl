@@ -7,11 +7,10 @@ The code has been tested in ROS Kinetic
 ```bash
 sudo apt-get install ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface ros-kinetic-combined-robot-hw ros-kinetic-joint-state-controller ros-kinetic-velocity-controllers ros-kinetic-twist-mux ros-kinetic-diff-drive-controller ros-kinetic-costmap-prohibition-layer ros-kinetic-moveit ros-kinetic-moveit-core ros-kinetic-teb-local-planner ros-kinetic-move-base ros-kinetic-moveit-kinematics ros-kinetic-robot-localization ros-kinetic-combined-robot-hw ros-kinetic-joint-limits-interface ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-position-controllers ros-kinetic-joint-trajectory-controller ros-kinetic-moveit-visual-tools ros-kinetic-moveit-ros-planning-interface ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-global-planner ros-kinetic-joint-state-publisher-gui
 
-sudo apt-get install gazebo9* libgazebo9* ros-kinetic-gazebo9-*
-
 sudo apt-get install -y rosbash
 ```
 Note that in melodic this package is also needed: ros-kinetic-moveit-ros-occupancy-map-monitor
+You may also need to update to gazebo 9: sudo apt-get install gazebo9* libgazebo9* ros-kinetic-gazebo9-*
 
 ## Step 2: download the required packages in the workspace
 ```bash
