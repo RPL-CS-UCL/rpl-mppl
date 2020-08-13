@@ -43,7 +43,7 @@ git clone https://github.com/rpl-as-ucl/scripts.git
 git clone https://github.com/rpl-as-ucl/summit_xl_common.git
 git clone https://github.com/rpl-as-ucl/summit_xl_sim.git
 git clone https://github.com/rpl-as-ucl/summit_xls_ur5_common.git
-git clone https://github.com/ros-industrial/universal_robot.git
+git clone https://github.com/rpl-as-ucl/universal_robot.git
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 catkin build -j 1
