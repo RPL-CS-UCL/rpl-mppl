@@ -86,3 +86,23 @@ sudo apt-get install ros-kinetic-hector-trajectory-server
 sudo apt-get install ros-kinetic-navigation
 sudo apt-get install ros-kinetic-cob-navigation-config
 ```
+
+# Realsense Installation on Ubuntu 16.04LTS, ROS Kinetic
+Follow the steps:
+1. https://github.com/IntelRealSense/realsense-ros
+```bash
+export ROS_VER=kinetic
+sudo apt-get install ros-$ROS_VER-realsense2-camera
+sudo apt-get install ros-$ROS_VER-realsense2-description
+roslaunch realsense2_camera rs_camera.launch
+```
+
+2. In case of errors (): https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md#prerequisites
+```bash
+sudo update
+sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE
+modinfo uvcvideo | grep "version:"
+sudo apt-get install git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev 
+sudo apt-get install libglfw3-dev
+pip install pyrealsense2
+```
