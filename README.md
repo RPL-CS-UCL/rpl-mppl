@@ -59,6 +59,13 @@ source devel/setup.bash
 roslaunch rbkairos_moveit_config rbkairos_planning_execution.launch
 ```
 
+## Step 3-1: run the mppl with moveit
+Terminal 1:
+```bash
+source devel/setup.bash
+roslaunch mppl_sim_bringup mppl_complete_odom.launch
+```
+
 ## Step 3-2: run the franka with moveit
 Terminal 1:
 ```bash
