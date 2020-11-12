@@ -1,46 +1,25 @@
 # rpl-mppl
 Description of the UCL's RPL MPPL robot
 
-The code has been tested in ROS Kinetic
+The code has been tested in ROS Melodic
 
 ## Step 1: install dependencies
 ```bash
-sudo apt-get install python-rosdep ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface ros-kinetic-combined-robot-hw ros-kinetic-joint-state-controller ros-kinetic-velocity-controllers ros-kinetic-twist-mux ros-kinetic-diff-drive-controller ros-kinetic-costmap-prohibition-layer ros-kinetic-moveit ros-kinetic-moveit-core ros-kinetic-teb-local-planner ros-kinetic-move-base ros-kinetic-moveit-kinematics ros-kinetic-robot-localization ros-kinetic-combined-robot-hw ros-kinetic-joint-limits-interface ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-position-controllers ros-kinetic-joint-trajectory-controller ros-kinetic-moveit-visual-tools ros-kinetic-moveit-ros-planning-interface ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-global-planner ros-kinetic-joint-state-publisher-gui ros-kinetic-moveit-visual-tools ros-kinetic-rqt-joint-trajectory-controller ros-kinetic-ros-control ros-kinetic-gazebo-ros-control ros-kinetic-joint-trajectory-controller ros-kinetic-*controller* ros-kinetic-rospy* ros-kinetic-rosmsg 
+sudo apt-get install python-rosdep ros-melodic-eigen-conversions ros-melodic-kdl-parser ros-melodic-effort-controllers ros-melodic-controller-manager ros-melodic-transmission-interface ros-melodic-combined-robot-hw ros-melodic-joint-state-controller ros-melodic-velocity-controllers ros-melodic-twist-mux ros-melodic-diff-drive-controller ros-melodic-costmap-prohibition-layer ros-melodic-moveit ros-melodic-moveit-core ros-melodic-teb-local-planner ros-melodic-move-base ros-melodic-moveit-kinematics ros-melodic-robot-localization ros-melodic-combined-robot-hw ros-melodic-joint-limits-interface ros-melodic-gmapping ros-melodic-amcl ros-melodic-position-controllers ros-melodic-joint-trajectory-controller ros-melodic-moveit-visual-tools ros-melodic-moveit-ros-planning-interface ros-melodic-ros-control ros-melodic-ros-controllers ros-melodic-global-planner ros-melodic-joint-state-publisher-gui ros-melodic-moveit-visual-tools ros-melodic-rqt-joint-trajectory-controller ros-melodic-ros-control ros-melodic-gazebo-ros-control ros-melodic-joint-trajectory-controller ros-melodic-*controller* ros-melodic-rospy* ros-melodic-rosmsg 
 
 sudo apt-get install -y rosbash
 ```
-Note that in melodic this package is also needed: ros-kinetic-moveit-ros-occupancy-map-monitor
-You may also need to update to gazebo 9: sudo apt-get install gazebo9* libgazebo9* ros-kinetic-gazebo9-*
+Note that in melodic this package is also needed: ros-melodic-moveit-ros-occupancy-map-monitor
 
 ## Step 2: download the required packages in the workspace
 ```bash
 mkdir -p rpl-mppl/src
 cd rpl-mppl/src
-git clone https://github.com/rpl-as-ucl/egh_gripper_common.git
-git clone https://github.com/rpl-as-ucl/egh_gripper_controller.git
-git clone https://github.com/rpl-as-ucl/franka_ros.git
-git clone https://github.com/rpl-as-ucl/hector_gazebo.git
-git clone https://github.com/rpl-as-ucl/mppl_common.git
-git clone https://github.com/rpl-as-ucl/mppl_odom_broadcaster.git
-git clone https://github.com/rpl-as-ucl/mppl_sim.git
-git clone https://github.com/rpl-as-ucl/panda_moveit_config.git
-git clone https://github.com/rpl-as-ucl/panda_simulator.git
-git clone https://github.com/rpl-as-ucl/rbkairos_common.git
-git clone https://github.com/rpl-as-ucl/rbkairos_sim.git
-git clone https://github.com/rpl-as-ucl/rcomponent.git
-git clone https://github.com/rpl-as-ucl/realsense_gazebo_plugin.git
-git clone https://github.com/rpl-as-ucl/robotnik_elevator_interface.git
-git clone https://github.com/rpl-as-ucl/robotnik_gazebo_models.git
-git clone https://github.com/rpl-as-ucl/robotnik_gazebo_plugins.git
-git clone https://github.com/rpl-as-ucl/ros_astra_camera.git
-git clone https://github.com/rpl-as-ucl/robotnik_msgs.git
-git clone https://github.com/rpl-as-ucl/robotnik_sensors.git
-git clone https://github.com/rpl-as-ucl/rpl_panda_with_rs.git
-git clone https://github.com/rpl-as-ucl/scripts.git
-git clone https://github.com/rpl-as-ucl/summit_xl_common.git
-git clone https://github.com/rpl-as-ucl/summit_xl_sim.git
-git clone https://github.com/rpl-as-ucl/summit_xls_ur5_common.git
-git clone https://github.com/rpl-as-ucl/universal_robot.git
+```
+Clone this repository and it's submodules
+```
+git clone --recurse-submodules https://github.com/rpl-as-ucl/rpl-mppl.git
+
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 catkin build -j 1
@@ -88,17 +67,17 @@ $ git rebase upstream/master
 ```bash
 sudo apt-get install python-empy
 sudo apt-get install libuvc-dev 
-sudo apt-get install ros-kinetic-hector-nav-msgs
-sudo apt-get install ros-kinetic-hector-trajectory-server
-sudo apt-get install ros-kinetic-navigation
-sudo apt-get install ros-kinetic-cob-navigation-config
+sudo apt-get install ros-melodic-hector-nav-msgs
+sudo apt-get install ros-melodic-hector-trajectory-server
+sudo apt-get install ros-melodic-navigation
+sudo apt-get install ros-melodic-cob-navigation-config
 ```
 
-# Realsense Installation on Ubuntu 16.04LTS, ROS Kinetic
+# Realsense Installation on Ubuntu 18.04LTS, ROS Melodic
 Follow the steps:
 1. https://github.com/IntelRealSense/realsense-ros
 ```bash
-export ROS_VER=kinetic
+export ROS_VER=Melodic
 sudo apt-get install ros-$ROS_VER-realsense2-camera
 sudo apt-get install ros-$ROS_VER-realsense2-description
 roslaunch realsense2_camera rs_camera.launch

@@ -1,0 +1,72 @@
+[submodule "egh_gripper_common"]
+	path = egh_gripper_common
+	url = https://github.com/rpl-as-ucl/egh_gripper_common.git
+[submodule "egh_gripper_controller"]
+	path = egh_gripper_controller
+	url = https://github.com/rpl-as-ucl/egh_gripper_controller.git
+[submodule "franka_ros"]
+	path = franka_ros
+	url = https://github.com/rpl-as-ucl/franka_ros.git
+[submodule "hector_gazebo"]
+	path = hector_gazebo
+	url = https://github.com/rpl-as-ucl/hector_gazebo.git
+[submodule "mppl_common"]
+	path = mppl_common
+	url = https://github.com/rpl-as-ucl/mppl_common.git
+[submodule "mppl_odom_broadcaster"]
+	path = mppl_odom_broadcaster
+	url = https://github.com/rpl-as-ucl/mppl_odom_broadcaster.git
+[submodule "mppl_sim"]
+	path = mppl_sim
+	url = https://github.com/rpl-as-ucl/mppl_sim.git
+[submodule "panda_moveit_config"]
+	path = panda_moveit_config
+	url = https://github.com/rpl-as-ucl/panda_moveit_config.git
+[submodule "panda_simulator"]
+	path = panda_simulator
+	url = https://github.com/rpl-as-ucl/panda_simulator.git
+[submodule "rbkairos_common"]
+	path = rbkairos_common
+	url = https://github.com/rpl-as-ucl/rbkairos_common.git
+[submodule "rbkairos_sim"]
+	path = rbkairos_sim
+	url = https://github.com/rpl-as-ucl/rbkairos_sim.git
+[submodule "rcomponent"]
+	path = rcomponent
+	url = https://github.com/rpl-as-ucl/rcomponent.git
+[submodule "realsense_gazebo_plugin"]
+	path = realsense_gazebo_plugin
+	url = https://github.com/rpl-as-ucl/realsense_gazebo_plugin.git
+[submodule "robotnik_elevator_interface"]
+	path = robotnik_elevator_interface
+	url = https://github.com/rpl-as-ucl/robotnik_elevator_interface.git
+[submodule "robotnik_gazebo_models"]
+	path = robotnik_gazebo_models
+	url = https://github.com/rpl-as-ucl/robotnik_gazebo_models.git
+[submodule "robotnik_gazebo_plugins"]
+	path = robotnik_gazebo_plugins
+	url = https://github.com/rpl-as-ucl/robotnik_gazebo_plugins.git
+[submodule "ros_astra_camera"]
+	path = ros_astra_camera
+	url = https://github.com/rpl-as-ucl/ros_astra_camera.git
+[submodule "robotnik_msgs"]
+	path = robotnik_msgs
+	url = https://github.com/rpl-as-ucl/robotnik_msgs.git
+[submodule "robotnik_sensors"]
+	path = robotnik_sensors
+	url = https://github.com/rpl-as-ucl/robotnik_sensors.git
+[submodule "rpl_panda_with_rs"]
+	path = rpl_panda_with_rs
+	url = https://github.com/rpl-as-ucl/rpl_panda_with_rs.git
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com/rpl-as-ucl/scripts.git
+[submodule "summit_xl_common"]
+	path = summit_xl_common
+	url = https://github.com/rpl-as-ucl/summit_xl_common.git
+[submodule "summit_xl_sim"]
+	path = summit_xl_sim
+	url = https://github.com/rpl-as-ucl/summit_xl_sim.git
+[submodule "costmap_prohibition_layer"]
+	path = costmap_prohibition_layer
+	url = https://github.com/rst-tu-dortmund/costmap_prohibition_layer.git
