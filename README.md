@@ -1,7 +1,7 @@
 # rpl-mppl
 Description of the UCL's RPL MPPL robot
 
-The code has been tested in ROS Kinetic
+The code has been tested in ROS Kinetic, Melodic
 
 ## Step 1: install dependencies
 ```bash
